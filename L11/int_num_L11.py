@@ -1,0 +1,7 @@
+import control as ct
+import matplotlib.pyplot as plt
+
+sys = ct.tf([1],[1, 0.5, 1])
+
+ct.step_response(sys).plot()
+plt.show()
